@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'BaseController@getIndex'); {
     return view('welcome');
-});
-Route::get('test',function () {
+};
+/*Route::get('test',function () {
     return 'eeeee rockkk';
 });
 Route::get('user/{id?}', function ($id=null){
 return 'User'.$id;
-})->where(['id'=>'[A-Za-z_0-9]+']); 
+})->where(['id'=>'[A-Za-z_0-9]+']); */
 
 
