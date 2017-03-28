@@ -1,1 +1,33 @@
-body {background: pink; color: white;}
+body {
+ 
+    background: url('../img4.jpg');
+	color: gray;
+
+}
+.carousel{
+    text-align:center;
+}
+.menu {
+    width:200px;
+    float:right;
+}
+.product{
+    border-bottom:solid 1px lightgray;
+    margin-bottom: 10px;
+}
+.mylink{
+	background: url('../imgcatalog.png');
+	color:gray;
+}
+.mylink:hover{
+	background: url('../imgcatalog2.png');
+	color:white;
+}
+.name{
+    color: gray;
+    font-size: medium;
+}
+.body{
+    color: slategray;
+    font-size: medium;
+}

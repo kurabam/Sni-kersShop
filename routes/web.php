@@ -11,14 +11,13 @@
 |
 */
 
-Route::get('/', 'BaseController@getIndex'); {
-    return view('welcome');
-};
-/*Route::get('test',function () {
-    return 'eeeee rockkk';
-});
-Route::get('user/{id?}', function ($id=null){
-return 'User'.$id;
-})->where(['id'=>'[A-Za-z_0-9]+']); */
+Route::get('/', 'BaseController@getIndex');
+
+Auth::routes();
+Route::get('/home', 'HomeController@index');
+Route::get('/catalog', 'CatalogController@getAll');
+Route::get('/catalog/{id}', 'CatalogController@getCategory');
+Route::post('/home', 'HomeController@postIndex');
+Route::get('/{id}','StaticController@getIndex');
 
 
