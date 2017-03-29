@@ -47,7 +47,7 @@
                         </tr>
                         <tr>
                             <td><a style="display: none;" id="clearBasket" href="#">Очистить</a></td>
-                            <td><a style="display: none;" id="checkOut" href="#">Оформить</a></td>
+                            <td><a style="display: none;" id="checkOut" href="basket">Оформить</a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -66,6 +66,8 @@
                 </a>
 				<a href = "{{asset('feedback')}}" class='navbar-brand'> Условия доставки
 				</a>
+                <a href = "{{asset('basket')}}" class='navbar-brand'> Корзина заказов
+                </a>
 				<a href = "{{asset('catalog')}}" class='navbar-brand'> Каталог
 				</a>
             </div>

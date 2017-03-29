@@ -18,6 +18,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/catalog', 'CatalogController@getAll');
 Route::get('/catalog/{id}', 'CatalogController@getCategory');
 Route::post('/home', 'HomeController@postIndex');
+Route::get('/basket/', 'BasketController@getIndex');
 Route::get('/{id}','StaticController@getIndex');
 
 
